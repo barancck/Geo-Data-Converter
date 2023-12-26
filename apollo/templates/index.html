@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="icon" href="../static/apollo/images/tab.png">
+  <link rel="stylesheet" href="{% static 'apollo/css/style.css' %}">
+</head>
+<body>
+  {% include 'header.html' %}
+  
+  <div class="welcome">
+    <p class="welcome-txt">GEO Data Converter</p>
+    <a class="welcome-btn" href="{% url 'time' %}"><button class="lesgo">Explore Now</button></a>
+  </div>
+  <div class="welcome2">
+    <div class="welcome2-left">
+      <p class="txt1">SOLGIS provides a cutting-edge software platform that revolutionizes the solar industry by seamlessly integrating satellite imagery and sophisticated analytics.</p>
+    </div>
+    <div class="welcome2-right">
+      <img class="mockup-welcome-image" src="../static/apollo/images/4.png" >
+    </div>
+
+  </div>
+
+
+  {% include 'footer.html' %}
+</body>
+</html>
